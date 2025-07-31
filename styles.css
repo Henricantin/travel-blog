@@ -27,7 +27,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 4.5rem;
+    height: 5.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +104,7 @@ body {
 
 .content-btn {
     display: inline-block;
-    padding: 0.75rem 2rem;
+    padding: 1rem 3rem;
     background-color: var(--blue-1);
     color: var(--white-1);
     text-decoration: none;
@@ -115,4 +115,49 @@ body {
 
 .content-btn:hover {
     background-color: var(--blue-2);
+}
+
+.country-cards {
+    padding: 4rem 2rem;
+    background-color: var(--white-2);
+    text-align: center;
+}
+
+.country-cards h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: var(--blue-2);
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--white-1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 1rem;
+    color: var(--black-1);
 }
