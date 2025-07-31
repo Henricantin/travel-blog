@@ -49,6 +49,11 @@ body {
     text-decoration: none;
 }
 
+#nav_symbol {
+    font-size: 1.3rem;
+    margin-top: -5px;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
