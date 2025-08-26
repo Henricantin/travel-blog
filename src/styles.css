@@ -73,7 +73,7 @@ body {
 
 .content {
     height: 100vh;
-    background-image: url(img/paris-background.jpg);
+    background-image: url(../img/paris-background.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
